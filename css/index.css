@@ -2,7 +2,7 @@
 * @Author: jiang
 * @Date:   2019-10-10 10:02:21
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-11 07:36:09
+* @Last Modified time: 2019-10-11 07:45:02
 */
 /*中间分类模块开始*/
 .grid {
@@ -99,5 +99,22 @@
 .grid-col3{
     width: 190px;
     height: 100%;
+/*    background-color: skyblue;*/
+}
+/* 右边模块 */
+.login {
+    height: 115px;
+    border-bottom: 1px solid #ccc;
+    background-color: pink;
+}
+
+.news {
+    height: 154px;
+    border-bottom: 1px solid #ccc;
+    background-color: purple;
+}
+
+.expand {
+    height: 209px;
     background-color: skyblue;
 }
