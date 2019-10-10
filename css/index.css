@@ -2,11 +2,11 @@
 * @Author: jiang
 * @Date:   2019-10-10 10:02:21
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-11 07:01:26
+* @Last Modified time: 2019-10-11 07:36:09
 */
 /*中间分类模块开始*/
 .grid {
-    height: 480px;
+    height: 480px; 
 }
 .grid-col1 {
     width: 190px;
@@ -39,8 +39,62 @@
 .grid-col2{
     width: 790px;
     height: 100%;
-    background-color: purple;
+/*    background-color: purple;*/
     margin-left: 10px;
+}
+/* banner部分 */
+.grid-col2-b div {
+    float: left;
+    margin-top: 10px;
+}
+.grid-col2-b div:last-child {
+    float: right;
+    margin-top: 10px;
+}
+/* 箭头部分 */
+.grid-col2-t {
+    position: relative;
+}
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, .6);
+    font-family: arial;
+    font-weight: normal;
+}
+.arrow-r {
+    right: 0;
+}
+.circle {
+    width: 167px;
+    height: 20px;
+    background: rgba(255, 255, 255, .3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+        border-radius: 10px;
+        padding-left: 8px;
+}
+.circle li {
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    float: left;
+    margin: 4px;
+    cursor: pointer;  /* 鼠标经过li 的时候变成小手 */
+}
+.circle .current {
+    background-color: #f10215;
 }
 .grid-col3{
     width: 190px;

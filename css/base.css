@@ -2,8 +2,12 @@
 * @Author: jiang
 * @Date:   2019-10-08 12:40:17
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-10 09:46:55
+* @Last Modified time: 2019-10-11 07:18:42
 */
+img {
+    /* display: block; */
+    vertical-align: top; /* 解决图片底测有空白缝隙的问题 */
+}
 @font-face {  /*声明字体*/
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?r5tos9');
