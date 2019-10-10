@@ -2,16 +2,39 @@
 * @Author: jiang
 * @Date:   2019-10-10 10:02:21
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-10 10:12:56
+* @Last Modified time: 2019-10-11 07:01:26
 */
 /*中间分类模块开始*/
-.grid{
+.grid {
     height: 480px;
 }
-.grid-col1{
+.grid-col1 {
     width: 190px;
     height: 100%;
-    background-color: pink;
+    background-color: #6e6568;
+    color: #fff;
+    font-size: 14px;  /* 不是给字的，给 /  */
+    position: relative;
+}
+.grid-col1 a {
+    color: #fff;
+    font-size: 14px;  /* 是给链接文字  */
+    margin: 0 3px;
+}
+.grid-col1 a:hover {
+    color: #f10215;
+}
+.grid-col1 ul {
+    padding: 10px 0;
+}
+.grid-col1 ul li {
+    padding-left: 12px;
+    height: 29px;
+    line-height: 26px;
+    /* margin-left: 12px; 同学们体会下 这里为什么不用 margin  就是因为下面有鼠标经过的效果*/
+}
+.grid-col1 ul li:hover {
+    background-color: #9c9698;
 }
 .grid-col2{
     width: 790px;
