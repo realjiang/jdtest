@@ -2,7 +2,7 @@
 * @Author: jiang
 * @Date:   2019-10-10 10:02:21
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-13 07:34:15
+* @Last Modified time: 2019-10-13 07:44:56
 */
 /*中间分类模块开始*/
 .grid {
@@ -201,5 +201,35 @@
 
 .expand {
     height: 209px;
-    background-color: skyblue;
+    background-color: #fff;
+    overflow: hidden; /* expand 这个宽度继承了 父亲 190宽度 */
+}
+.expand ul {
+    width: 195px; /*  父亲是 190 但是里面的li 宽度超过了190 摆放不开 4个li 此时 让ul 宽度变大 */ 
+}
+.expand  li {
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand  li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+.expand  li i {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
+}
+.expand  li:first-child i {
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
 }
