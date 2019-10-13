@@ -2,7 +2,7 @@
 * @Author: jiang
 * @Date:   2019-10-10 10:02:21
 * @Last Modified by:   jiang
-* @Last Modified time: 2019-10-13 07:44:56
+* @Last Modified time: 2019-10-13 08:01:38
 */
 /*中间分类模块开始*/
 .grid {
@@ -15,6 +15,29 @@
     color: #fff;
     font-size: 14px;  /* 不是给字的，给 /  */
     position: relative;
+}
+.ad {
+    width: 250px;
+    height: 480px;
+/*  background-color: pink;
+ */ position: absolute;
+    top: 0;
+    left: -250px;
+}
+.ad-r {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    z-index: 999;
+    width: 0;
+    height: 480px;
+    background: url(../images/ad-r.jpg);
+    /* z这个盒子做动画，所以给它添加过渡 */
+    transition: all 0.8s;
+}
+.ad:hover .ad-r {  
+    /* 鼠标经过 ad 这个广告大盒子的时候， 里面的这个叫 ad-r的盒子的宽度由0变为 990 */
+    width: 990px;
 }
 .grid-col1 a {
     color: #fff;
